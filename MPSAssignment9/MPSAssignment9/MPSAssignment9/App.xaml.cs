@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MPSAssignment9.Views;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +11,7 @@ namespace MPSAssignment9
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new WeatherAppView();
         }
 
         protected override void OnStart()

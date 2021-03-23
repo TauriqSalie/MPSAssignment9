@@ -1,25 +1,23 @@
-﻿using System;
+﻿using MPSAssignment9.View_Models;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 using Xamarin.Forms;
-using MPSAssignment9.View_Models;
 using Xamarin.Forms.Xaml;
 
-namespace MPSAssignment9
-{ 
-
-  [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MainPage : ContentPage
+namespace MPSAssignment9.Views
+{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class WeatherAppView : ContentPage
     {
-        public MainPage()
+        public WeatherAppView()
         {
             InitializeComponent();
 
             this.BindingContext = new WeatherAppViewModel();
-
         }
     }
 }
