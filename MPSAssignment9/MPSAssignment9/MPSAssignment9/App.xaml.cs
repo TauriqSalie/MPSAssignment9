@@ -2,6 +2,7 @@
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Newtonsoft.Json;
 
 namespace MPSAssignment9
 {
@@ -12,6 +13,7 @@ namespace MPSAssignment9
             InitializeComponent();
 
             MainPage = new WeatherAppView();
+            
         }
 
         protected override void OnStart()

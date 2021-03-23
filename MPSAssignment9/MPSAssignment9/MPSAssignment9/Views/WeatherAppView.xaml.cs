@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -17,7 +18,7 @@ namespace MPSAssignment9.Views
         {
             InitializeComponent();
 
-            this.BindingContext = new WeatherAppViewModel();
+            BindingContext = new WeatherAppViewModel();
         }
     }
 }

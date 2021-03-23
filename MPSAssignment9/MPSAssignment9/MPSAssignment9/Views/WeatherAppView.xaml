@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MPSAssignment9.Views.WeatherAppView">
+             x:Class="MPSAssignment9.Views.WeatherAppView"
+             BackgroundImageSource="capepoint.jpg">
     <ContentPage.Content>
         <StackLayout>
-                <Image Source="today.png" Aspect="AspectFit" HeightRequest="100"/>
-                <Image Source="{Binding current.weather[0]}" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Label Text="Cape Town Weather" FontSize="Header" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Image Source="{Binding current._weatherDetails}" VerticalOptions="Center" HorizontalOptions="Center"/>
                 <Label Text="{Binding current.temp, StringFormat='{0:N0}°'}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Header" FontAttributes="Bold"/>
                 <Label Text="{Binding current.weather[0].main}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Header"/>
             
